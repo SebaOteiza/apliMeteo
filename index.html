@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <title>Clima en tu ubicación</title>
+    
+</head>
+
+<body onload="onLoad()">
+    
+    <div id="container">
+        <div class="block">
+        <div id="location"></div> <!--Locación del usuario-->
+        <div id="description"></div> <!--Descripción del lugar, cómo se llama el lugar-->
+        <div id="date"></div>
+        
+    </div>
+
+    <div class="block">
+        <div class="information-container">
+            Pressure
+            <div class="info" id="pressure"></div>
+        </div>
+    
+        <div class="information-container">
+            Temperature
+            <div class="info" id="temperature"></div>
+        </div>
+        <div class="information-container">
+            Humidity
+            <div class="info" id="humidity"></div>
+        </div>
+       
+        
+        
+    </div>
+
+    </div>
+
+
+    <div id="loader" class="loader">Cargando...</div>
+    <script src="index.js"></script>
+</body>
+</html>
